@@ -1,0 +1,168 @@
+/* 
+  Localizable.strings
+  TX-EYE
+
+  Created by CoreCat on 2016/11/21.
+  Copyright © 2016年 CoreCat. All rights reserved.
+*/
+
+/* General */
+"OK"    = "OK";
+"YES"   = "Yes";
+"NO"    = "No";
+
+"SELECT" = "Select";
+"CANCEL" = "Cancel";
+
+"RETURN" = "Return";
+
+/* Header title 0 */
+"HEADER_TITLE_0" = "FLIGHT ATTITUDE PARAMETERS";
+/* Header title 1 */
+"HEADER_TITLE_1" = "INTERFACE SETTINGS";
+/* Header title 2 */
+"HEADER_TITLE_2" = "WIRELESS SETTINGS";
+
+/* Section 0 cell title 0 */
+"SECTION_0_CELL_TITLE_0" = "Parameters auto save";
+/* Section 0 cell title 1 */
+"SECTION_0_CELL_TITLE_1" = "Reset the parameters";
+/* Section 1 cell title 0 */
+"SECTION_1_CELL_TITLE_0" = "Right hand mode";
+/* Section 2 cell title 0 */
+"SECTION_2_CELL_TITLE_0" = "Rename SSID";
+
+/* Reset alert title */
+"RESET_ALERT_TITLE" = "Reset The parameters";
+/* Reset alert message */
+"RESET_ALERT_MESSAGE" = "OK!";
+/* Reset alert OK button title */
+"RESET_ALERT_OK_BUTTON_TITLE" = "OK";
+
+/* Rename VC title */
+"RENAME_VC_TITLE" = "Wireless Settings";
+/* Rename HUD INFO connecting to board */
+"RENAME_HUD_INFO_CONNECTING_TO_BOARD" = "Connecting to board";
+/* Rename HUD ERROR connect to board */
+"RENAME_HUD_ERROR_CONNECT_TO_BOARD" = "Error occurred when connect to board";
+/* Rename HUD INFO collecting information */
+"RENAME_HUD_INFO_COLLECTING_INFORMATION" = "Collecting information";
+/* Rename HUD ERROR error occurred */
+"RENAME_HUD_ERROR_ERROR_OCCURRED" = "Error occurred";
+/* Rename HUD ERROR get info */
+"RENAME_HUD_ERROR_GET_INFO" = "Error occurred while getting info";
+/* Rename HUD INFO apply successfully */
+"RENAME_HUD_INFO_APPLY_SUCCESSFULLY" = "Apply successfully";
+/* Rename HUD ERROR set SSID */
+"RENAME_HUD_ERROR_SET_SSID" = "Error occurred while setting SSID";
+/* Rename HUD ERROR reset board */
+"RENAME_HUD_ERROR_RESET_BOARD" = "Error occurred while resetting board";
+/* Rename HUD INFO applying changes */
+"RENAME_HUD_INFO_APPLYING_CHANGES" = "Applying changes";
+/* Rename ALERT title */
+"RENAME_ALERT_TITLE" = "Alert";
+/* Rename ALERT message */
+"RENAME_ALERT_MESSAGE" = "Reset successfully.\r\nNow you can go to WiFi SETTINGS PAGE to connect to new SSID.";
+/* Rename ALERT button title */
+"RENAME_ALERT_BUTTON_TITLE" = "OK";
+/* Rename HUD ALERT change another SSID */
+"RENAME_HUD_ALERT_CHANGE_ANOTHER_SSID" = "Please type a different SSID with the current one";
+
+/* Rename NOTICE title */
+"RENAME_NOTICE_TITLE" = "Notice";
+/* Rename NOTICE message */
+"RENAME_NOTICE_MESSAGE" = "Set SSID successfully.\r\nPlease turn the device off and on,\r\nthen wait half a minute to take effect.\r\nGo to WiFi SETTINGS to connect to new SSID.";
+/* Rename NOTICE button title */
+"RENAME_NOTICE_BUTTON_TITLE" = "OK";
+
+/* MediaLib ALERT title */
+"MEDIA_ALERT_TITLE" = "Warning";
+/* MediaLib ALERT message */
+"MEDIA_ALERT_MESSAGE" = "The file(s) selected will be deleted?";
+/* MediaLib ALERT button no */
+"MEDIA_ALERT_BUTTON_NO" = "No";
+/* MediaLib ALERT button yes */
+"MEDIA_ALERT_BUTTON_YES" = "Yes";
+
+/* Voice guide text */
+"CONTROL_PANEL_VOICE_GUIDE" = "Voice Control: Forward, Backward, Left, Right, Takeoff, Landing";
+/* Request audio record permission */
+"CONTROL_PANEL_REQUEST_RECORD_PERMISSION" = "If you want to use Voice Control, go to Settings -> find %@ -> turn on Microphone";
+"CONTROL_PANEL_PERMISSION_DENIED" = "Permission Denied";
+
+/* Taking picture message */
+"TAKE_PICTURE_SUCCESS" = "Taking picture successfully";
+"TAKE_PICTURE_FAIL" = "Failed to take picture";
+
+/* Recording video message */
+"RECORD_VIDEO_BEGIN" = "Start recording video";
+"RECORD_VIDEO_SUCCESS" = "Recording video successfully";
+"RECORD_VIDEO_FAIL" = "Failed to record video";
+
+/* Free space monitor notifications */
+"INSUFFICIENT_STORAGE_INFO" = "Insufficient storage";
+"INSUFFICIENT_STORAGE_CANNOT_START" = "Insufficient storage(%@), cannot start recording video";
+
+/* Device in use notification */
+"DEVICE_IN_USE" = "The device is already in use";
+
+/* Request Photo Album access permission */
+"MEDIA_LIBRARY_ACCESS_PHOTO_PERMISSION" = "Do not have permission to access Photo Albums";
+"MEDIA_LIBRARY_PERMISSION_DENIED" = "Permission Denied";
+
+/* Save to album */
+"MEDIA_LIBRARY_NEED_MORE_SPACE" = "Need more space to save file to Photos Album";
+"MEDIA_LIBRARY_VIDEO_INCOMPATIBLE" = "Video file is not compatible with Photos Album";
+"MEDIA_LIBRARY_PLEASE_WAIT" = "Please wait";
+"MEDIA_LIBRARY_SAVING_VIDEO_FILE" = "Saving video file to Photos Album";
+"MEDIA_LIBRARY_SAVING_IMAGE_FILE" = "Saving image file to Photos Album";
+"MEDIA_LIBRARY_SAVE_FAILED" = "Failed";
+"MEDIA_LIBRARY_SAVE_VIDEO_ERROR" = "Save video file to Photos Album (%@)";
+"MEDIA_LIBRARY_SAVE_VIDEO_SUCCESS" = "Save video file to Photos Album successfully";
+"MEDIA_LIBRARY_SAVE_IMAGE_ERROR" = "Save image file to Photos Album (%@)";
+"MEDIA_LIBRARY_SAVE_IAMGE_SUCCESS" = "Save image file to Photos Album successfully";
+
+/* Remote Device */
+"DEVICE_DISCONNECTED"   = "Device disconnected";
+"DEVICE_IS_BUSY"        = "Device is busy";
+
+"DEVICE_INSUFFICIENT_STORAGE" = "Insufficient SD card storage";
+
+"NO_CARD_INSERTED"      = "No storage card inserted";
+"CARD_NOT_FORMATTED"    = "Storage card not formatted";
+
+/* Media Grid View */
+
+"SELECTED_AT_LEAST_ONE_FILE" = "Select at least one file";
+
+"INFO_FOR_DOWNLOADED" = "The file(s) already downloaded will be skipped from downloading";
+
+"CONFIRM" = "Confirm";
+"FILE_WILL_BE_DELETED" = "The files selected will be deleted";
+
+// Remote
+"FETCH_IMAGE_LIST" = "Fetching image list...";
+"FETCH_VIDEO_LIST" = "Fetching video list...";
+"CONNECTION_FAILED_TITLE"   = "Connection Failed";
+"CONNECTION_FAILED_MESSAGE" = "Error occurred while connecting to device";
+
+"PREPARE_TO_DOWNLOAD"   = "Preparing to download...";
+"DOWNLOADED_FORMAT"     = "Downloaded: %@/%@";
+"CANCELLING_DOWNLOAD"   = "Cancelling download";
+"DOWNLOAD_ABORTED"      = "Download aborted";
+"DOWNLOAD_FAILED"       = "Download failed";
+
+"OVERWRITE_CONFIRM_TITLE"   = "Overwrite confirm";
+"OVERWRITE_CONFIRM_MESSAGE" = "Local file exists, overwrite?";
+"RESUME_CONFIRM_TITLE"      = "Resuming download confirm";
+"RESUME_CONFIRM_MESSAGE"    = "Temp file exists, with size %@, resume download or overwrite?";
+
+"OVERWRITE"             = "Overwrite";
+"RESUME"                = "Resume";
+"CANCEL"                = "Cancel";
+
+"PREPARE_TO_DELETE"     = "Preparing to delete...";
+"DELETE_FORMAT"         = "Deleted: %lu/%lu";
+"CANNELLING_DELETE"     = "Cancelling delete";
+
+"EXITING" = "Exiting remote file manager...";

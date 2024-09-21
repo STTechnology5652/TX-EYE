@@ -1,0 +1,115 @@
+//
+//  LocalPhotoGridViewController.m
+//  GoTrack
+//
+//  Created by CoreCat on 2018/11/5.
+//  Copyright © 2018年 CoreCat. All rights reserved.
+//
+
+#import "LocalPhotoGridViewController.h"
+#import "MediaManager.h"
+
+@import MWPhotoBrowser;
+
+
+@interface LocalPhotoGridViewController () <MWPhotoBrowserDelegate>
+
+@end
+
+@implementation LocalPhotoGridViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self reloadMediaList];
+}
+
+#pragma mark - Reload Media List
+
+- (void)reloadMediaList
+{
+    [MediaManager.sharedInstance getAllLocalImageFilesWithCompletion:^(NSArray * _Nullable array, NSError * _Nullable error) {
+        self.mediaList = [array mutableCopy];
+        [self.collectionView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+    }];
+}
+
+#pragma mark - UICollectionView DataSource
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    MediaGridCell *cell = [super collectionView:collectionView cellForItemAtIndexPath:indexPath];
+    
+    BOOL selected = [[self.selectedList objectAtIndex:indexPath.row] boolValue];
+    
+    cell.index = indexPath.row;
+    
+    LocalFile *localFile = [self.mediaList objectAtIndex:indexPath.row];
+    
+    // PlaceHolder
+    UIImage *placeHolderImage = [UIImage imageNamed:@"placeholder_photo"];
+    [cell.imageView setImage:placeHolderImage];
+    
+    // 缩略图，此处有缓存
+    [MediaManager.sharedInstance createImageThumbnailURL:localFile.fullPath
+                                              completion:^(UIImage *image, NSError *error) {
+                                                  // Image
+                                                  [cell.imageView setImage:image];
+                                                  [cell setNeedsLayout];
+                                              }];
+    
+    // 选择
+    [cell setSelectionMode:self.selectionMode];
+    [cell setIsSelected:selected];
+    
+    return cell;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.mediaList.count;
+}
+
+#pragma mark - UICollectionView Delegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.isEditing) {
+        [super collectionView:collectionView didSelectItemAtIndexPath:indexPath];
+    } else {
+        // 显示图片浏览器
+        MWPhotoBrowser *browser = [[MWPhotoBrowser alloc] initWithDelegate:self];
+        
+        // Set options
+        browser.displayActionButton = YES;
+        browser.displayNavArrows = YES;
+        browser.displaySelectionButtons = NO;
+        browser.zoomPhotosToFill = YES;
+        browser.alwaysShowControls = NO;
+        browser.enableGrid = YES;
+        browser.startOnGrid = NO;
+        browser.autoPlayOnAppear = NO;
+        
+        [browser setCurrentPhotoIndex:indexPath.row];
+        
+        [self.navigationController pushViewController:browser animated:YES];
+    }
+}
+
+#pragma mark - MWPhotoBrowserDelegate
+
+- (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser
+{
+    return self.mediaList.count;
+}
+
+- (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index
+{
+    if (index < self.mediaList.count) {
+        LocalFile *localFile = [self.mediaList objectAtIndex:index];
+        return [MWPhoto photoWithURL:[NSURL fileURLWithPath:localFile.fullPath]];
+    }
+    return nil;
+}
+
+@end

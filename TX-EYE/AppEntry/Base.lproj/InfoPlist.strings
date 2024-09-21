@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  TX-EYE
+
+  Created by CoreCat on 2016/11/21.
+  Copyright © 2016年 CoreCat. All rights reserved.
+*/
+
+NSPhotoLibraryUsageDescription = "APP would like to store photos/videos to Media Library.";
+
+NSMicrophoneUsageDescription = "Need microphone access for voice control.";

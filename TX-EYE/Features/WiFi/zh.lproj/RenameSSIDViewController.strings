@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Input new SSID here"; ObjectID = "Yhh-Lq-RUK"; */
+"Yhh-Lq-RUK.placeholder" = "在这里输入新的SSID";
+
+/* Class = "UILabel"; text = "Current SSID"; ObjectID = "dsL-XR-nF7"; */
+"dsL-XR-nF7.text" = "当前SSID";
+
+/* Class = "UILabel"; text = "New SSID"; ObjectID = "eYN-MV-JEy"; */
+"eYN-MV-JEy.text" = "新的SSID";
+
+/* Class = "UILabel"; text = "Please use only “A-Z”, “a-z”, “0-9”, and “_”, and 24 characters at most"; ObjectID = "yX6-M7-Anj"; */
+"yX6-M7-Anj.text" = "请使用“A-Z”，“a-z”，“0-9”，和“_”，最多24个字符";

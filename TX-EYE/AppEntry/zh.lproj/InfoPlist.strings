@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  TX-EYE
+
+  Created by CoreCat on 2016/11/21.
+  Copyright © 2016年 CoreCat. All rights reserved.
+*/
+
+NSPhotoLibraryUsageDescription = "APP需要保存截图和视频到媒体库。";
+
+NSMicrophoneUsageDescription = "语音控制需要访问麦克风。";

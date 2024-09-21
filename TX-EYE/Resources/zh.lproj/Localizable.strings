@@ -1,0 +1,168 @@
+/* 
+  Localizable.strings
+  TX-EYE
+
+  Created by CoreCat on 2016/11/21.
+  Copyright © 2016年 CoreCat. All rights reserved.
+*/
+
+/* General */
+"OK"     = "确定";
+"YES"    = "是";
+"NO"     = "否";
+
+"SELECT" = "选择";
+"CANCEL" = "取消";
+
+"RETURN" = "返回";
+
+/* Header title 0 */
+"HEADER_TITLE_0" = "飞行姿态参数";
+/* Header title 1 */
+"HEADER_TITLE_1" = "界面设置";
+/* Header title 2 */
+"HEADER_TITLE_2" = "无线设置";
+
+/* Section 0 cell title 0 */
+"SECTION_0_CELL_TITLE_0" = "自动保存参数";
+/* Section 0 cell title 1 */
+"SECTION_0_CELL_TITLE_1" = "重置参数";
+/* Section 1 cell title 0 */
+"SECTION_1_CELL_TITLE_0" = "右手模式";
+/* Section 2 cell title 0 */
+"SECTION_2_CELL_TITLE_0" = "重命名SSID";
+
+/* Reset alert title */
+"RESET_ALERT_TITLE" = "重置参数";
+/* Reset alert message */
+"RESET_ALERT_MESSAGE" = "成功！";
+/* Reset alert OK button title */
+"RESET_ALERT_OK_BUTTON_TITLE" = "确定";
+
+/* Rename VC title */
+"RENAME_VC_TITLE" = "无线设置";
+/* Rename HUD INFO connecting to board */
+"RENAME_HUD_INFO_CONNECTING_TO_BOARD" = "正在连接到设备";
+/* Rename HUD ERROR connect to board */
+"RENAME_HUD_ERROR_CONNECT_TO_BOARD" = "连接设备时发生错误";
+/* Rename HUD INFO collecting information */
+"RENAME_HUD_INFO_COLLECTING_INFORMATION" = "正在搜集信息";
+/* Rename HUD ERROR error occurred */
+"RENAME_HUD_ERROR_ERROR_OCCURRED" = "发生错误";
+/* Rename HUD ERROR get info */
+"RENAME_HUD_ERROR_GET_INFO" = "获取信息时发生错误";
+/* Rename HUD INFO apply successfully */
+"RENAME_HUD_INFO_APPLY_SUCCESSFULLY" = "应用成功";
+/* Rename HUD ERROR set SSID */
+"RENAME_HUD_ERROR_SET_SSID" = "设置SSID发生错误";
+/* Rename HUD ERROR reset board */
+"RENAME_HUD_ERROR_RESET_BOARD" = "重置设备时发生错误";
+/* Rename HUD INFO applying changes */
+"RENAME_HUD_INFO_APPLYING_CHANGES" = "正在应用改变";
+/* Rename ALERT title */
+"RENAME_ALERT_TITLE" = "提示";
+/* Rename ALERT message */
+"RENAME_ALERT_MESSAGE" = "重置设备成功。\r\n现在可以前往系统WiFi设置页连接新的SSID。";
+/* Rename ALERT button title */
+"RENAME_ALERT_BUTTON_TITLE" = "确定";
+/* Rename HUD ALERT change another SSID */
+"RENAME_HUD_ALERT_CHANGE_ANOTHER_SSID" = "请输入一个不同于当前的SSID";
+
+/* Rename NOTICE title */
+"RENAME_NOTICE_TITLE" = "提示";
+/* Rename NOTICE message */
+"RENAME_NOTICE_MESSAGE" = "设置SSID成功。\r\n请给设备重新上电，等待半分钟生效。\r\n前往系统WiFi设置页连接新的SSID。";
+/* Rename NOTICE button title */
+"RENAME_NOTICE_BUTTON_TITLE" = "确定";
+
+/* MediaLib ALERT title */
+"MEDIA_ALERT_TITLE" = "警告";
+/* MediaLib ALERT message */
+"MEDIA_ALERT_MESSAGE" = "即将删除选择的文件？";
+/* MediaLib ALERT button no */
+"MEDIA_ALERT_BUTTON_NO" = "取消";
+/* MediaLib ALERT button yes */
+"MEDIA_ALERT_BUTTON_YES" = "确定";
+
+/* Voice guide text */
+"CONTROL_PANEL_VOICE_GUIDE" = "请讲：“前进”、“后退”、“左侧飞”、“右侧飞”、“起飞”、“降落”";
+/* Request audio record permission */
+"CONTROL_PANEL_REQUEST_RECORD_PERMISSION" = "如果需要使用语音控制，前往设置 -> 找到%@ -> 打开麦克风";
+"CONTROL_PANEL_PERMISSION_DENIED" = "权限被拒绝";
+
+/* Taking picture message */
+"TAKE_PICTURE_SUCCESS" = "拍照成功";
+"TAKE_PICTURE_FAIL" = "拍照失败";
+
+/* Recording video message */
+"RECORD_VIDEO_BEGIN" = "开始录像";
+"RECORD_VIDEO_SUCCESS" = "录像成功";
+"RECORD_VIDEO_FAIL" = "录像失败";
+
+/* Free space monitor notifications */
+"INSUFFICIENT_STORAGE_INFO" = "空间不足";
+"INSUFFICIENT_STORAGE_CANNOT_START" = "空间不足(%@)，无法开始录像";
+
+/* Device in use notification */
+"DEVICE_IN_USE" = "设备已被占用";
+
+/* Request Photo Album access permission */
+"MEDIA_LIBRARY_ACCESS_PHOTO_PERMISSION" = "没有访问系统相册的权限";
+"MEDIA_LIBRARY_PERMISSION_DENIED" = "权限被拒绝";
+
+/* Save to album */
+"MEDIA_LIBRARY_NEED_MORE_SPACE" = "需要更多空间以保存到系统相册";
+"MEDIA_LIBRARY_VIDEO_INCOMPATIBLE" = "视频文件不兼容系统相册";
+"MEDIA_LIBRARY_PLEASE_WAIT" = "请等待";
+"MEDIA_LIBRARY_SAVING_VIDEO_FILE" = "正在保存视频文件到系统相册";
+"MEDIA_LIBRARY_SAVING_IMAGE_FILE" = "正在保存图片文件到系统相册";
+"MEDIA_LIBRARY_SAVE_FAILED" = "失败";
+"MEDIA_LIBRARY_SAVE_VIDEO_ERROR" = "保存视频到系统相册 (%@)";
+"MEDIA_LIBRARY_SAVE_VIDEO_SUCCESS" = "成功保存视频到系统相册";
+"MEDIA_LIBRARY_SAVE_IMAGE_ERROR" = "保存图片到系统相册 (%@)";
+"MEDIA_LIBRARY_SAVE_IAMGE_SUCCESS" = "成功保存图片到系统相册";
+
+/* Remote Device */
+"DEVICE_DISCONNECTED"   = "设备未连接";
+"DEVICE_IS_BUSY"        = "设备正忙";
+
+"DEVICE_INSUFFICIENT_STORAGE" = "存储卡空间不足";
+
+"NO_CARD_INSERTED"      = "存储卡未插入";
+"CARD_NOT_FORMATTED"    = "存储卡未格式化";
+
+/* Media Grid View */
+
+"SELECTED_AT_LEAST_ONE_FILE" = "选择至少一个文件";
+
+"INFO_FOR_DOWNLOADED" = "已经保存到本地的文件将不会被再次下载";
+
+"CONFIRM" = "确认";
+"FILE_WILL_BE_DELETED" = "即将删除选中的文件";
+
+// 远程
+"FETCH_IMAGE_LIST" = "正在获取照片列表...";
+"FETCH_VIDEO_LIST" = "正在获取视频列表...";
+"CONNECTION_FAILED_TITLE"   = "连接失败";
+"CONNECTION_FAILED_MESSAGE" = "连接设备时发生错误，请检查网络";
+
+"PREPARE_TO_DOWNLOAD"   = "准备下载";
+"DOWNLOADED_FORMAT"     = "已下载：%@/%@";
+"CANCELLING_DOWNLOAD"   = "正在取消下载";
+"DOWNLOAD_ABORTED"      = "下载中止";
+"DOWNLOAD_FAILED"       = "下载失败";
+
+"OVERWRITE_CONFIRM_TITLE"   = "确认覆盖";
+"OVERWRITE_CONFIRM_MESSAGE" = "本地文件已存在，是否覆盖？";
+"RESUME_CONFIRM_TITLE"      = "确认继续下载";
+"RESUME_CONFIRM_MESSAGE"    = "下载临时文件已存在，文件大小%@，继续下载或者覆盖？";
+
+"OVERWRITE"             = "覆盖";
+"RESUME"                = "恢复";
+"CANCEL"                = "取消";
+
+"PREPARE_TO_DELETE"     = "准备删除";
+"DELETE_FORMAT"         = "已删除：%lu/%lu";
+"CANNELLING_DELETE"     = "正在取消删除";
+
+"EXITING" = "正在退出远程文件管理器...";
