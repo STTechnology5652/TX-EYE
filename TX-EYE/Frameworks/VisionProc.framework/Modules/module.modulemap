@@ -1,0 +1,6 @@
+framework module VisionProc {
+  umbrella header "VisionProc.h"
+
+  export *
+  module * { export * }
+}

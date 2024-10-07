@@ -9,7 +9,7 @@ xcuserdata/
 *.xcscmblueprint
 *.xccheckout
 
-TX-EYE/Frameworks/
+!TX-EYE/Frameworks/
 !TX-EYE/Frameworks/.gitignore
 
 Pods/
